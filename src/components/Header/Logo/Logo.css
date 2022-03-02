@@ -1,0 +1,51 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.logo__img {
+  height: 40px;
+}
+
+.logo__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+.logo__name {
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #5786D9;
+  line-height: 1.3;
+}
+
+.logo__blog {
+  font-family: 'Vollkorn', serif;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 11px;
+  color: #212335;
+  line-height: 1.2;
+}
+
+@media (min-width: 800px) {
+  .logo__img {
+    height: 60px;
+  }
+
+  .logo__text-wrapper {
+    margin-left: 3px;
+  }
+
+  .logo__name {
+    font-size: 24px;
+  }
+
+  .logo__blog {
+    font-size: 16px;
+  }
+}

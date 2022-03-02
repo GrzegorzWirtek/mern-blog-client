@@ -1,0 +1,14 @@
+.App {
+  position: relative;
+  max-width: 1480px;
+  min-width: 310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media (min-width: 800px) {
+  .App {
+    padding: 0 100px;
+  }
+}

@@ -1,0 +1,24 @@
+.article {
+  margin-top: 100px;
+}
+
+.title {
+  margin: 20px auto;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 32px;
+}
+
+.date {
+  font-family: 'Vollkorn', serif;
+  margin: 20px auto;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.412);
+}
+
+
+.text {
+  font-family: 'Catamaran', sans-serif;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: 400;
+}

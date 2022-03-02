@@ -1,0 +1,28 @@
+.ham {
+  width: 40px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.ham__item {
+  height: 3px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+
+.ham__item--active:nth-child(1) {
+  transform: translateY(325%) rotate(225deg);
+}
+
+.ham__item--active:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.ham__item--active:nth-child(3) {
+  transform: translateY(-325%) rotate(-135deg);
+}
