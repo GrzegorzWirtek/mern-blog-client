@@ -1,18 +1,32 @@
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import './Article.css';
+
 const Article = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
+
+	const url = window.location.pathname;
+	const currentId = url.slice(9, url.length);
+
+	const articles = useSelector((state) => state.articlesReducer);
+	const article = articles.filter((article) => article._id === currentId)[0];
+	const { imgName, date, title, text } = article;
+	const imgDescription = imgName.slice(0, imgName.length - 2);
+
 	return (
 		<>
 			<div className='article'>
-				<p className='title'>Title title title</p>
-				<p className='date'>Październik 22.2022</p>
-				<p className='text'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-					possimus cumque adipisci magni delectus voluptatum corrupti, veniam
-					ullam quibusdam fugit fugiat expedita beatae ad repellat nam
-					voluptatem earum eligendi aliquid in iure, sapiente cum eaque! Culpa
-					veritatis beatae, aut earum fugit excepturi saepe minima asperiores
-					debitis, assumenda a nemo rem!
-				</p>
+				<p>Aktualne ID: {currentId}</p>
+				<img
+					className='article__img'
+					src={`/images/${imgName}.png`}
+					alt={`Zdjęcie przedstawiające ${imgDescription}`}
+				/>
+				<p className='article__title'>{title}</p>
+				<p className='article__date'>{date}</p>
+				<p className='article__text'>{text}</p>
 			</div>
 		</>
 	);

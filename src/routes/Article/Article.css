@@ -1,14 +1,19 @@
 .article {
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
+  max-width: 900px;
 }
 
-.title {
+.article__img {
+  width: 100%;
+}
+
+.article__title {
   margin: 20px auto;
   font-family: 'Noto Serif Display', serif;
   font-size: 32px;
 }
 
-.date {
+.article__date {
   font-family: 'Vollkorn', serif;
   margin: 20px auto;
   font-weight: 600;
@@ -16,9 +21,21 @@
 }
 
 
-.text {
+.article__text {
   font-family: 'Catamaran', sans-serif;
   margin: 20px auto;
   font-size: 18px;
   font-weight: 400;
+}
+
+@media (min-width:560px) {
+  .article {
+    margin: 100px 10vw 0 10vw;
+  }
+}
+
+@media (min-width:800px) {
+  .article {
+    margin: 0 auto;
+  }
 }

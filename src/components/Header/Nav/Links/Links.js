@@ -9,22 +9,61 @@ const Links = () => {
 	return (
 		<ul className='nav'>
 			<li className='nav__li'>
-				<Link className='nav__link' to='/'>
-					HOME
-				</Link>
-				{line}
+				<div className='nav__icons'>
+					<a
+						href='https://www.facebook.com/grzegorz.wirtek/'
+						target='_blank'
+						rel='noreferrer noopener'>
+						<img
+							src='/images/facebook-brands.svg'
+							alt='Facebook icon'
+							className='nav__icon'
+							title='Facebook'
+						/>
+					</a>
+
+					<a
+						href='https://www.instagram.com/grzegorz.wirtek/'
+						target='_blank'
+						rel='noreferrer noopener'>
+						<img
+							src='/images/instagram-brands.svg'
+							alt='Instagram icon'
+							className='nav__icon'
+							title='Instagram'
+						/>
+					</a>
+
+					<a
+						href='https://github.com/GrzegorzWirtek'
+						target='_blank'
+						rel='noreferrer noopener'>
+						<img
+							src='/images/github-brands.svg'
+							alt='Github icon'
+							className='nav__icon'
+							title='Github'
+						/>
+					</a>
+				</div>
 			</li>
 			<li className='nav__li'>
-				<Link className='nav__link' to='/article/123'>
-					BLOG
+				<Link className='nav__link' to='/'>
+					HOME
+					{line}
 				</Link>
-				{line}
+			</li>
+			<li className='nav__li'>
+				<Link className='nav__link' to='/articles'>
+					BLOG
+					{line}
+				</Link>
 			</li>
 			<li className='nav__li'>
 				<Link className='nav__link' to='/about'>
 					O MNIE
+					{line}
 				</Link>
-				{line}
 			</li>
 		</ul>
 	);

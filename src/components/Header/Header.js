@@ -4,6 +4,7 @@ import NavDesktop from './Nav/NavDesktop/NavDesktop';
 import NavMobile from './Nav/NavMobile/NavMobile.js';
 import Ham from './Nav/Ham/Ham';
 import { toggleIsDesktop } from '../../actions/navigation';
+import { getArticles } from '../../actions/articles';
 
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -18,6 +19,7 @@ const Header = () => {
 		sizeOfDesktop.addEventListener('change', (e) => {
 			dispatch(toggleIsDesktop(sizeOfDesktop.matches));
 		});
+		dispatch(getArticles());
 	}, [dispatch]);
 
 	return (

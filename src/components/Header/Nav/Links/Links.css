@@ -11,6 +11,17 @@
   margin: 10px 0;
 }
 
+.nav__icons {
+  height: 20px;
+  transform: translateY(-2px);
+}
+
+.nav__icon {
+  height: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
 .nav__link {
   text-decoration: none;
   color: black;
@@ -26,23 +37,43 @@
   }
 
   .nav__li {
-    margin: 0 0 0 30px;
-    overflow: hidden;
+    margin: 0 0 0 25px;
+  }
+
+  .nav__icon {
+    height: 20px;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+    filter: invert(44%) sepia(0%) saturate(2905%) hue-rotate(43deg) brightness(103%) contrast(82%);
+    transition: 0.2s;
+  }
+
+  .nav__icon:hover {
+    filter: invert(0%) sepia(2%) saturate(7429%) hue-rotate(125deg) brightness(102%) contrast(95%);
   }
 
   .nav__link {
+    display: block;
     font-size: 16px;
+    color: #727272;
+    overflow: hidden;
+    transition: 0.2s;
   }
 
   .nav__line {
     display: block;
     width: 100%;
-    border: 1px solid black;
+    border-top: 2px solid #000000;
     transform: translate(-105%, -2px);
     transition: 0.2s;
   }
 
   .nav__li:hover .nav__line {
     transform: translate(0, -2px);
+  }
+
+
+  .nav__link:hover {
+    color: black;
   }
 }

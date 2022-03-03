@@ -4,7 +4,6 @@ const Search = () => {
 	return (
 		<div className='search'>
 			<form className={'search__form'}>
-				<input className='search__input' type='text' />
 				<button className='search__button'>
 					<img
 						className='search__icon'
@@ -12,6 +11,11 @@ const Search = () => {
 						alt='Search icon'
 					/>
 				</button>
+				<input
+					className='search__input'
+					type='text'
+					placeholder='Szukaj tytułu'
+				/>
 			</form>
 		</div>
 	);
