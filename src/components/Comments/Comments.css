@@ -1,0 +1,21 @@
+.comments {
+  width: 100%;
+  background-color: rgb(194, 217, 237);
+}
+
+.comments__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.comment {
+  margin: 15px auto;
+}
+
+.comment__name {
+  font-size: 16px;
+}
+
+.comment__text {
+  font-size: 16px;
+}

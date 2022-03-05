@@ -9,9 +9,16 @@ const Article = () => {
 		window.scrollTo(0, 0);
 	});
 
-	const stateArticles = useSelector((state) => state.articlesReducer);
+	const state = useSelector((state) => state);
 
-	const articles = stateArticles.map((article) => (
+	let currentArticles = null;
+	if (state.navigationReducer.foundArticles.length) {
+		currentArticles = state.navigationReducer.foundArticles;
+	} else {
+		currentArticles = state.articlesReducer;
+	}
+
+	const articles = currentArticles.map((article) => (
 		<ArticleMin key={article._id} data={article} />
 	));
 

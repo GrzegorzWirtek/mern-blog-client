@@ -1,3 +1,7 @@
 export const GET_ARTICLES = 'GET_ARTICLES';
+
 export const TOGGLE_HAM = 'TOGGLE_HAM';
 export const TOGGLE_IS_DEKSTOP = 'TOGGLE_IS_DEKSTOP';
+export const SET_FOUND_ARTICLES = 'SET_FOUND_ARTICLES';
+
+export const ADD_COMMENT = 'ADD_COMMENT';

@@ -4,12 +4,18 @@ import './ArticleMin.css';
 const ArticleMin = ({ data }) => {
 	const navigate = useNavigate();
 	const { _id, imgName, date, title } = data;
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 
 	return (
 		<article
 			className='article-min'
 			data-id={_id}
-			onClick={() => navigate(`../article/${_id}`)}>
+			onClick={() => {
+				navigate(`../article/${_id}`);
+				scrollToTop();
+			}}>
 			<div className='article-min__img-wrapper'>
 				<img
 					className='article-min__img'
