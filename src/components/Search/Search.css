@@ -10,13 +10,12 @@
   display: flex;
   flex-basis: 100%;
   max-width: 500px;
-
 }
 
 .search__button,
 .cancel__button {
   position: absolute;
-  top: 1px;
+  top: 4px;
   left: 2px;
   display: flex;
   align-items: center;
@@ -34,7 +33,7 @@
 
 .search__icon,
 .cancel__icon {
-  width: 18px;
+  width: 21px;
   filter: invert(58%) sepia(2%) saturate(0%) hue-rotate(311deg) brightness(100%) contrast(89%);
   cursor: pointer;
   transition: 0.2s;
@@ -43,7 +42,7 @@
 }
 
 .cancel__icon {
-  width: 17px;
+  width: 21px;
 }
 
 .search__icon:hover,
@@ -58,7 +57,7 @@
   border: 1px solid #919191;
   outline: none;
   font-family: 'Catamaran', sans-serif;
-  font-size: 20px;
+  font-size: 2.4rem;
 }
 
 .search__input::-webkit-search-cancel-button {
@@ -81,4 +80,25 @@
   -webkit-box-shadow: 0px 0px 6px -3px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 0px 6px -3px rgba(66, 68, 90, 1);
   box-shadow: 0px 0px 6px -3px rgba(66, 68, 90, 1);
+}
+
+
+@media (min-width:800px) {
+
+  .search__button,
+  .cancel__button {
+    top: 1px;
+  }
+
+  .search__input {
+    font-size: 2rem;
+  }
+
+  .search__icon {
+    width: 18px;
+  }
+
+  .cancel__icon {
+    width: 17px;
+  }
 }

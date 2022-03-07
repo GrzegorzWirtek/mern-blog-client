@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -11,11 +11,17 @@
   padding: 0 15px;
   background-color: white;
   z-index: 2;
+  -webkit-box-shadow: 0px -53px 19px 44px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px -53px 19px 44px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px -53px 19px 44px rgba(0, 0, 0, 0.57);
 }
 
 @media (min-width: 800px) {
   .header {
     position: relative;
     padding: 80px 0 140px 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 }

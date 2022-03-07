@@ -13,7 +13,6 @@ const Article = () => {
 
 	return (
 		<div className='article'>
-			<p>Aktualne ID: {currentId}</p>
 			<img
 				className='article__img'
 				src={`/images/${imgName}.png`}

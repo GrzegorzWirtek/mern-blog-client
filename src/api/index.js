@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-// const url = 'https://gggwww.herokuapp.com/articles';
-const url = 'http://localhost:3001/articles';
+const url = 'https://grzegorz-wirtek-blog.herokuapp.com/articles';
 
 export const getArticlesByAxios = () => axios.get(url);
 export const addCommentByAxios = (comment) =>

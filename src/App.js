@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
+import Spinner from './components/Spinner/Spinner';
 import Router from './Router.js';
 import { useSelector } from 'react-redux';
 
@@ -11,14 +12,7 @@ const App = () => {
 		<div className='App'>
 			<BrowserRouter>
 				<Header />
-				{articles.length ? (
-					<Router />
-				) : (
-					<p className='error-message'>
-						Nie można wyświetlić zawartości. Sprawdź połączenie z serverem i
-						bazą danych.
-					</p>
-				)}
+				{articles.length ? <Router /> : <Spinner />}
 			</BrowserRouter>
 		</div>
 	);

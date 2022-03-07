@@ -2,6 +2,7 @@ import {
 	TOGGLE_HAM,
 	TOGGLE_IS_DEKSTOP,
 	SET_FOUND_ARTICLES,
+	TOGGLE_COMMENTS_FORM,
 } from '../constans/actionTypes';
 
 export const toggleHam = () => {
@@ -14,4 +15,8 @@ export const toggleIsDesktop = (value) => {
 
 export const setFoundArticles = (articles) => {
 	return { type: SET_FOUND_ARTICLES, payload: articles };
+};
+
+export const toggleCommentsForm = () => {
+	return { type: TOGGLE_COMMENTS_FORM };
 };

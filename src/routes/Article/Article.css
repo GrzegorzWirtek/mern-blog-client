@@ -10,12 +10,14 @@
 .article__title {
   margin: 20px auto;
   font-family: 'Noto Serif Display', serif;
-  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 600;
 }
 
 .article__date {
   font-family: 'Vollkorn', serif;
-  margin: 20px auto;
+  font-size: 2rem;
+  line-height: 1;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.412);
 }
@@ -24,7 +26,7 @@
 .article__text {
   font-family: 'Catamaran', sans-serif;
   margin: 20px auto;
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: 400;
 }
 

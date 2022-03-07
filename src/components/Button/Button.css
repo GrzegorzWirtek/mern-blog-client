@@ -1,0 +1,21 @@
+.button {
+  padding: 5px 35px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  background-color: #571159;
+}
+
+.button:hover {
+  background-color: #8b1d8f;
+}
+
+@media (min-width:800px) {
+  .button {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}

@@ -9,6 +9,24 @@ const Links = () => {
 	return (
 		<ul className='nav'>
 			<li className='nav__li'>
+				<Link className='nav__link' to='/'>
+					HOME
+					{line}
+				</Link>
+			</li>
+			<li className='nav__li'>
+				<Link className='nav__link' to='/articles'>
+					BLOG
+					{line}
+				</Link>
+			</li>
+			<li className='nav__li'>
+				<Link className='nav__link' to='/about'>
+					O MNIE
+					{line}
+				</Link>
+			</li>
+			<li className='nav__li'>
 				<div className='nav__icons'>
 					<a
 						href='https://www.facebook.com/grzegorz.wirtek/'
@@ -46,24 +64,6 @@ const Links = () => {
 						/>
 					</a>
 				</div>
-			</li>
-			<li className='nav__li'>
-				<Link className='nav__link' to='/'>
-					HOME
-					{line}
-				</Link>
-			</li>
-			<li className='nav__li'>
-				<Link className='nav__link' to='/articles'>
-					BLOG
-					{line}
-				</Link>
-			</li>
-			<li className='nav__li'>
-				<Link className='nav__link' to='/about'>
-					O MNIE
-					{line}
-				</Link>
 			</li>
 		</ul>
 	);

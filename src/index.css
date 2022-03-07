@@ -1,9 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700&family=Noto+Serif+Display:wght@300;400;500;600;700;800&family=Vollkorn:wght@600;700;800&display=swap');
 
+/* font-family: 'Noto Serif Display', serif;  //Tytuł
+font-family: 'Vollkorn', serif;               //Logo
+font-family: 'Catamaran', sans-serif;         //Tekst  */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  text-decoration: none;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+input,
+textarea,
+button {
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 .error-message {
