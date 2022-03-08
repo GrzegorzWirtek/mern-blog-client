@@ -28,7 +28,7 @@ button.add-comment-buton {
 .comment__name {
   flex-basis: 50%;
   font-family: 'Catamaran', sans-serif;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 800;
   line-height: 1;
 }
@@ -46,6 +46,7 @@ button.add-comment-buton {
   font-family: 'Catamaran', sans-serif;
   font-size: 1.9rem;
   line-height: 1.4;
+  font-weight: 300;
 }
 
 @media (min-width: 500px) {
@@ -55,5 +56,19 @@ button.add-comment-buton {
 
   button.add-comment-buton {
     margin: 0;
+  }
+}
+
+@media (min-width:800px) {
+  .comment__name {
+    font-size: 1.8rem;
+  }
+
+  .comment__date {
+    font-size: 1.6rem;
+  }
+
+  .comment__text {
+    font-size: 1.7rem;
   }
 }

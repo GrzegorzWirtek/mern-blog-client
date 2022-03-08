@@ -21,10 +21,14 @@
 .article-min__date {
   font-family: 'Vollkorn', serif;
   margin-top: 5px;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.412);
 }
 
-.article-min__text {
+.article-min__title {
   font-family: 'Noto Serif Display', serif;
+  font-size: 1.9rem;
+  font-weight: 600;
 }
 
 @media (min-width:660px) {

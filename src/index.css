@@ -12,7 +12,6 @@ font-family: 'Catamaran', sans-serif;         //Tekst  */
 
 html {
   font-size: 10px;
-  text-decoration: none;
 }
 
 a,
@@ -26,11 +25,4 @@ input,
 textarea,
 button {
   font-size: 1rem;
-  text-decoration: none;
-}
-
-.error-message {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 100px;
 }

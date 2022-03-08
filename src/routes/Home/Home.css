@@ -1,3 +1,60 @@
 .home {
-  margin-top: 100px;
+  margin-top: 140px;
+}
+
+.home__title-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home__title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Noto Serif Display', serif;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.home__decription {
+  font-size: 1.9rem;
+  font-weight: 300;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.6;
+}
+
+.recent {
+  margin-top: 80px;
+}
+
+.recent__title {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid #727272;
+}
+
+.recent__articles {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width:800px) {
+  .home {
+    margin-top: 20px;
+  }
+
+  .home__title {
+    font-size: 4.4rem;
+    font-weight: 400;
+  }
+
+  .recent__title {
+    width: 700px;
+  }
 }

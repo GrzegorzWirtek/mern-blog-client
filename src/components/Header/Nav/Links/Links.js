@@ -1,6 +1,7 @@
 import './Links.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import Icons from '../../../Icons/Icons';
 
 const Links = () => {
 	const state = useSelector((state) => state.navigationReducer);
@@ -27,43 +28,7 @@ const Links = () => {
 				</Link>
 			</li>
 			<li className='nav__li'>
-				<div className='nav__icons'>
-					<a
-						href='https://www.facebook.com/grzegorz.wirtek/'
-						target='_blank'
-						rel='noreferrer noopener'>
-						<img
-							src='/images/facebook-brands.svg'
-							alt='Facebook icon'
-							className='nav__icon'
-							title='Facebook'
-						/>
-					</a>
-
-					<a
-						href='https://www.instagram.com/grzegorz.wirtek/'
-						target='_blank'
-						rel='noreferrer noopener'>
-						<img
-							src='/images/instagram-brands.svg'
-							alt='Instagram icon'
-							className='nav__icon'
-							title='Instagram'
-						/>
-					</a>
-
-					<a
-						href='https://github.com/GrzegorzWirtek'
-						target='_blank'
-						rel='noreferrer noopener'>
-						<img
-							src='/images/github-brands.svg'
-							alt='Github icon'
-							className='nav__icon'
-							title='Github'
-						/>
-					</a>
-				</div>
+				<Icons iconsSubClass='nav__icons' iconSubClass='nav__icon' />
 			</li>
 		</ul>
 	);

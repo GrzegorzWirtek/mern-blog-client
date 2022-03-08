@@ -1,3 +1,4 @@
 .about {
   margin-top: 100px;
+  min-height: calc(100vh - 280px);
 }

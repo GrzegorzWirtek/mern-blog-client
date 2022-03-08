@@ -3,11 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1000px;
+  min-height: calc(100vh - 280px);
   margin: 140px auto 0px auto;
 }
 
 @media (min-width: 800px) {
   .articles {
     margin: 0 auto;
+    padding-top: 30px;
   }
 }

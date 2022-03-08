@@ -40,7 +40,7 @@ const Search = () => {
 				</button>
 				<input
 					className='search__input'
-					spellcheck='false'
+					spellCheck='false'
 					type='search'
 					placeholder='Szukaj tytułu'
 					onChange={(e) => setSearchValue(e.target.value)}

@@ -1,0 +1,42 @@
+.icons {
+  transform: translateY(-2px);
+  height: 20px;
+}
+
+.nav__icons {
+  height: 35px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.789);
+}
+
+.icon {
+  height: 20px;
+  margin: 0 0 0 15px;
+  cursor: pointer;
+  filter: invert(44%) sepia(0%) saturate(2905%) hue-rotate(43deg) brightness(103%) contrast(82%);
+  transition: 0.2s;
+}
+
+.nav__icon {
+  height: 35px;
+  margin: 0 10px;
+  filter: invert(0%) sepia(2%) saturate(7429%) hue-rotate(125deg) brightness(102%) contrast(95%);
+}
+
+@media (min-width: 800px) {
+  .nav__icons {
+    padding-top: 5px;
+    border: none;
+  }
+
+  .nav__icon {
+    height: 20px;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+    filter: invert(44%) sepia(0%) saturate(2905%) hue-rotate(43deg) brightness(103%) contrast(82%);
+  }
+
+  .icon:hover {
+    filter: invert(0%) sepia(2%) saturate(7429%) hue-rotate(125deg) brightness(102%) contrast(95%);
+  }
+}

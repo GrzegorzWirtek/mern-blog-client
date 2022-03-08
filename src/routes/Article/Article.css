@@ -1,6 +1,7 @@
 .article {
   margin: 100px auto 0 auto;
   max-width: 900px;
+  min-height: calc(100vh - 280px);
 }
 
 .article__img {
@@ -26,8 +27,9 @@
 .article__text {
   font-family: 'Catamaran', sans-serif;
   margin: 20px auto;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 @media (min-width:560px) {
@@ -39,5 +41,17 @@
 @media (min-width:800px) {
   .article {
     margin: 0 auto;
+  }
+
+  .article__title {
+    font-size: 3.8rem;
+  }
+
+  .article__date {
+    font-size: 1.9rem;
+  }
+
+  .article__text {
+    font-size: 1.8rem;
   }
 }
