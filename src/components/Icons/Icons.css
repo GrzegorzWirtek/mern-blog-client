@@ -11,7 +11,7 @@
 
 .icon {
   height: 20px;
-  margin: 0 0 0 15px;
+  margin: 0 7px;
   cursor: pointer;
   filter: invert(44%) sepia(0%) saturate(2905%) hue-rotate(43deg) brightness(103%) contrast(82%);
   transition: 0.2s;

@@ -4,6 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { setFoundArticles } from '../../actions/navigation';
 
+const SEARCH_ICON_SEARCH_URL = '/images/magnifying-glass-solid.svg';
+const SEARCH_ICON_CANCEL_URL = '/images/cancel-close-svgrepo-com.svg';
+const SEARCH_PLACEHOLDER = 'Sukaj tytułu';
+
 const Search = () => {
 	const [searchValue, setSearchValue] = useState('');
 	const dispatch = useDispatch();
@@ -34,7 +38,7 @@ const Search = () => {
 				<button className='search__button' type='submit'>
 					<img
 						className='search__icon'
-						src='/images/magnifying-glass-solid.svg'
+						src={SEARCH_ICON_SEARCH_URL}
 						alt='Search icon'
 					/>
 				</button>
@@ -42,7 +46,7 @@ const Search = () => {
 					className='search__input'
 					spellCheck='false'
 					type='search'
-					placeholder='Szukaj tytułu'
+					placeholder={SEARCH_PLACEHOLDER}
 					onChange={(e) => setSearchValue(e.target.value)}
 					value={searchValue}
 				/>
@@ -54,7 +58,7 @@ const Search = () => {
 					onClick={() => setSearchValue('')}>
 					<img
 						className='cancel__icon'
-						src='/images/cancel-close-svgrepo-com.svg'
+						src={SEARCH_ICON_CANCEL_URL}
 						alt='Cancel icon'
 					/>
 				</button>

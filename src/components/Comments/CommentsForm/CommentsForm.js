@@ -8,6 +8,11 @@ import { toggleCommentsForm } from '../../../actions/navigation';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+const COMMENTS_NAME_PLACEHOLDER = 'Imię lub pseudonim';
+const COMMENTS_COMMENT_PLACEHOLDER = 'Komentarz';
+const COMMENTS_BUTTON_SUBMIT_TEXT = 'Zatwierdź';
+const COMMENTS_BUTTON_CANCEL_TEXT = 'Anuluj';
+
 const CommentsForm = ({ id }) => {
 	const [name, setName] = useState('');
 	const [comment, setComment] = useState('');
@@ -38,7 +43,7 @@ const CommentsForm = ({ id }) => {
 				type='text'
 				maxLength='30'
 				className='comments-form__name-input'
-				placeholder='Imię lub pseudonim'
+				placeholder={COMMENTS_NAME_PLACEHOLDER}
 				onChange={(e) => setName(e.target.value)}
 				value={name}
 				required
@@ -48,15 +53,19 @@ const CommentsForm = ({ id }) => {
 				rows='7'
 				maxLength='300'
 				className='comments-form__comment-textarea'
-				placeholder='Komentarz'
+				placeholder={COMMENTS_COMMENT_PLACEHOLDER}
 				onChange={(e) => setComment(e.target.value)}
 				value={comment}
 				required></textarea>
 			<section className='comments-form__buttons'>
-				<Button type='submit' text='Zatwierdź' subClass='comments__button' />
+				<Button
+					type='submit'
+					text={COMMENTS_BUTTON_SUBMIT_TEXT}
+					subClass='comments__button'
+				/>
 				<Button
 					type='button'
-					text='Anuluj'
+					text={COMMENTS_BUTTON_CANCEL_TEXT}
 					click={handleCancel}
 					subClass='comments__button comments__button--cancel'
 				/>

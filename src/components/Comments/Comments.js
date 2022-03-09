@@ -6,6 +6,8 @@ import { toggleCommentsForm } from '../../actions/navigation';
 
 import { useDispatch, useSelector } from 'react-redux';
 
+const COMMENTS_BUTTON_TEXT = 'Skomentuj';
+
 const Comments = ({ id, comments }) => {
 	const dispatch = useDispatch();
 	const isCommentsFormVisible = useSelector(
@@ -31,7 +33,7 @@ const Comments = ({ id, comments }) => {
 			<p className='comments__title'>Komentarze ({numberOfComments})</p>
 			<Button
 				click={handleAddComment}
-				text='Skomentuj'
+				text={COMMENTS_BUTTON_TEXT}
 				subClass='add-comment-buton'
 			/>
 			{commentsComponent}
