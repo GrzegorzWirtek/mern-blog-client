@@ -11,6 +11,7 @@ const Article = () => {
 
 	const state = useSelector((state) => state);
 
+	//Mechanizm do wyszukiwarki, wyświetlający tylko znalezione artykuły
 	let currentArticles = null;
 	if (state.navigationReducer.foundArticles.length) {
 		currentArticles = state.navigationReducer.foundArticles;

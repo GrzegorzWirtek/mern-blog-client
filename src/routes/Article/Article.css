@@ -7,6 +7,12 @@
   width: 100%;
 }
 
+.article__img-description {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
 .article__title {
   margin: 20px auto;
   font-family: 'Noto Serif Display', serif;

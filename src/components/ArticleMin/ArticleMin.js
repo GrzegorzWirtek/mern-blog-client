@@ -3,7 +3,9 @@ import './ArticleMin.css';
 
 const ArticleMin = ({ data }) => {
 	const navigate = useNavigate();
-	const { _id, imgName, date, title } = data;
+	// const { _id, imgName, date, title } = data;
+	const { _id, imgNames, date, title } = data;
+
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
@@ -19,7 +21,7 @@ const ArticleMin = ({ data }) => {
 			<div className='article-min__img-wrapper'>
 				<img
 					className='article-min__img'
-					src={`/images/${imgName}-min.png`}
+					src={`/images/${imgNames[0].imgName}-min.png`}
 					alt=''
 				/>
 			</div>
