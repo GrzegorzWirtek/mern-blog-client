@@ -1,0 +1,115 @@
+.admin__title {
+  padding: 40px 0 10px 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.preview {
+  min-height: 20vh;
+}
+
+.preview__title {
+  margin: 50px auto 20px auto;
+  padding: 10px 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  border-bottom: 1px solid #727272;
+}
+
+.admin__warning {
+  flex-basis: 100%;
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  margin: 30px auto 20px auto;
+  height: 40px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: red;
+}
+
+.admin__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  border: 1px solid #727272;
+}
+
+.admin__input {
+  flex-basis: 60%;
+  padding: 3px 5px;
+  margin: 5px;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  resize: none;
+  outline: none;
+  border: 1px solid #727272;
+  flex-grow: 1;
+}
+
+button.admin__button {
+  margin: 5px;
+  min-width: 243px;
+  background-color: rgb(145, 145, 145);
+  align-self: flex-start;
+}
+
+button.admin__button--cancel {
+  background-color: #32591A;
+  margin: 30px 10px;
+}
+
+button.admin__button--submit {
+  margin: 30px 10px;
+}
+
+.admin__submit-section {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.preview__map {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+@media (min-width: 800px) {
+  .admin__form {
+    margin: 0 15px 20px 15px;
+  }
+
+  .admin__title {
+    padding: 20px 15px 10px 15px;
+    font-size: 3rem;
+  }
+
+  .preview__title {
+    margin: 50px 15px 20px 15px;
+    font-size: 3rem;
+  }
+
+  button.admin__button--cancel {
+    background-color: #32591A;
+    margin: 20px 10px;
+  }
+
+  button.admin__button--cancel:hover {
+    background-color: #4e882a;
+  }
+
+  button.admin__button--submit {
+    margin: 20px 10px;
+  }
+
+  .preview__map {
+    margin: 0 15px;
+  }
+}

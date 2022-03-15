@@ -19,3 +19,12 @@ export const addComment = (newComment) => async (dispatch) => {
 		console.log('Add comment error: ', error);
 	}
 };
+
+export const addArticle = (newArticle) => async (dispatch) => {
+	try {
+		const { data } = await api.addArticleByAxios(newArticle);
+		dispatch({ type: 'ADD_ARTICLE', payload: data });
+	} catch (error) {
+		console.log('Add article error: ', error);
+	}
+};

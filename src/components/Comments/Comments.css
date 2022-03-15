@@ -60,6 +60,11 @@ button.add-comment-buton {
 }
 
 @media (min-width:800px) {
+  .comments {
+    width: calc(100% - 30px);
+  }
+
+
   .comment__name {
     font-size: 1.8rem;
   }
