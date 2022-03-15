@@ -3,7 +3,7 @@ import Button from '../../components/Button/Button';
 
 import { useNavigate } from 'react-router-dom';
 
-const ABOUT_PHOTO = '/images/about.png';
+const ABOUT_PHOTO = 'images/about.png';
 const ABOUT_TITLE = 'Kilka słów o mnie';
 const ABOUT_DESCRIPTION =
 	'Mając na uwadze to, że moja praca zawodowa i nauka wymagają spędzania wielu godzin przed komputerem, wyjątkową przyjemność sprawiają mi wycieczki i spacery. Kiedy tylko mam trochę więcej czasu lubię wsiąść w samochód i pojechać w nieznane. Dzięki temu znalazłem wiele miejsc położonych stosunkowo blisko Warszawy, gdzie można miło spędzić czas, zrelaksować się i pozwiedzać';

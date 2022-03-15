@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { setFoundArticles } from '../../actions/navigation';
 
-const SEARCH_ICON_SEARCH_URL = '/images/magnifying-glass-solid.svg';
-const SEARCH_ICON_CANCEL_URL = '/images/cancel-close-svgrepo-com.svg';
+const SEARCH_ICON_SEARCH_URL = 'images/magnifying-glass-solid.svg';
+const SEARCH_ICON_CANCEL_URL = 'images/cancel-close-svgrepo-com.svg';
 const SEARCH_PLACEHOLDER = 'Sukaj tytułu';
 
 const Search = () => {

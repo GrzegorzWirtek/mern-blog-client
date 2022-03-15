@@ -8,7 +8,7 @@ const Icons = ({ iconsSubClass, iconSubClass }) => {
 				target='_blank'
 				rel='noreferrer noopener'>
 				<img
-					src='/images/facebook-brands.svg'
+					src='images/facebook-brands.svg'
 					alt='Facebook icon'
 					className={`icon ${iconSubClass}`}
 					title='Facebook'
@@ -20,7 +20,7 @@ const Icons = ({ iconsSubClass, iconSubClass }) => {
 				target='_blank'
 				rel='noreferrer noopener'>
 				<img
-					src='/images/instagram-brands.svg'
+					src='images/instagram-brands.svg'
 					alt='Instagram icon'
 					className={`icon ${iconSubClass}`}
 					title='Instagram'
@@ -32,7 +32,7 @@ const Icons = ({ iconsSubClass, iconSubClass }) => {
 				target='_blank'
 				rel='noreferrer noopener'>
 				<img
-					src='/images/github-brands.svg'
+					src='images/github-brands.svg'
 					alt='Github icon'
 					className={`icon ${iconSubClass}`}
 					title='Github'

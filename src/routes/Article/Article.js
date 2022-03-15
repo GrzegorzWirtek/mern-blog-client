@@ -4,7 +4,7 @@ import Comments from '../../components/Comments/Comments';
 
 const Article = () => {
 	const url = window.location.pathname;
-	const currentId = url.slice(9, url.length);
+	const currentId = url.slice(-24);
 
 	const articles = useSelector((state) => state.articlesReducer);
 	const article = articles.filter((article) => article._id === currentId)[0];
@@ -18,11 +18,11 @@ const Article = () => {
 					<picture>
 						<source
 							media='(min-width:400px)'
-							srcSet={`/images/${imgNames[index + 1].imgName}.png`}
+							srcSet={`../images/${imgNames[index + 1].imgName}.png`}
 						/>
 						<img
 							className='article__img'
-							src={`/images/${imgNames[index + 1].imgName}-min.png`}
+							src={`../images/${imgNames[index + 1].imgName}-min.png`}
 							alt={imgNames[index + 1].imgDescription}
 						/>
 					</picture>
@@ -48,11 +48,11 @@ const Article = () => {
 				<picture>
 					<source
 						media='(min-width:400px)'
-						srcSet={`/images/${imgNames[0].imgName}.png`}
+						srcSet={`../images/${imgNames[0].imgName}.png`}
 					/>
 					<img
 						className='article__img'
-						src={`/images/${imgNames[0].imgName}-min.png`}
+						src={`../images/${imgNames[0].imgName}-min.png`}
 						alt=''
 					/>
 				</picture>

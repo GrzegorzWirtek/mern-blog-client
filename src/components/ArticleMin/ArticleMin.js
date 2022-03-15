@@ -21,7 +21,7 @@ const ArticleMin = ({ data }) => {
 			<div className='article-min__img-wrapper'>
 				<img
 					className='article-min__img'
-					src={`/images/${imgNames[0].imgName}-min.png`}
+					src={`images/${imgNames[0].imgName}-min.png`}
 					alt=''
 				/>
 			</div>
