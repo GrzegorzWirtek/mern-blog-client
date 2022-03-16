@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Spinner from './components/Spinner/Spinner';
 import Footer from './components/Footer/Footer';
@@ -11,11 +11,11 @@ const App = () => {
 
 	return (
 		<div className='App'>
-			<BrowserRouter basename={process.env.PUBLIC_URL}>
+			<HashRouter>
 				<Header />
 				{articles.length ? <Router /> : <Spinner />}
 				<Footer />
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 };

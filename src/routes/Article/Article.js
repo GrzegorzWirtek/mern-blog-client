@@ -3,7 +3,7 @@ import './Article.css';
 import Comments from '../../components/Comments/Comments';
 
 const Article = () => {
-	const url = window.location.pathname;
+	const url = window.location.href;
 	const currentId = url.slice(-24);
 
 	const articles = useSelector((state) => state.articlesReducer);
