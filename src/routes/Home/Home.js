@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const HOME_TITLE = 'Miejsca na Mazowszu, które koniecznie musisz odwiedzić';
 const HOME_DESCRIPTION =
-	'Nieznane zakątki odległych kontynentów, dzikie i nieodkryte krainy oraz tajemnicze rejony, gdzie nie postąpiła ludzka stopa - po co to komu, skoro województwo mazowieckie ma tyle do zaoferowania? Na łamach niniejszego bloga opisuję swoje wrażenia, których doświadczyłem odwiedzając wiele niezwykle ciekawych i często mało znanych miejsc znajdujących się w promieniu zaledwie kilkudziesięciu kilometrów od Warszawy. Wszystkich miłośników spacerów i małych weekendowych wycieczek zapraszam do lektury.';
+	'W promieniu zaledwie kilkudziesięciu kilometrów od Warszawy są miejsca, które potrafią zaskoczyć swoim urokiem. Marząc o dalekich podróżach zapominamy, że czasem najlepsze rzeczy mamy tuż na wyciągnięcie ręki. Województwo mazowieckie ma do zaoferowania więcej niż mogłoby się nam wydawać. Nie trzeba długo planować, pakować się - wystarczy wyjść z domu i ruszyć przed siebie. Zapraszam do lektury i poznania kilku niesamowitych punktów na mapie, które czekają tylko żeby je odwiedzić.';
 const HOME_RECENT_POSTS = 'Najnowsze posty';
 const HOME_NAVIGATE_BUTTON_TEXT = 'Wszystkie posty';
 

@@ -18,8 +18,10 @@
 
 @media (min-width: 800px) {
   .header {
-    position: relative;
-    padding: 40px 0 140px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 40px 0 90px 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;

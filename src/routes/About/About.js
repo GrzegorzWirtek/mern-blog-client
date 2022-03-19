@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const ABOUT_PHOTO = 'images/about.png';
 const ABOUT_TITLE = 'Kilka słów o mnie';
 const ABOUT_DESCRIPTION =
-	'Mając na uwadze to, że moja praca zawodowa i nauka wymagają spędzania wielu godzin przed komputerem, wyjątkową przyjemność sprawiają mi wycieczki i spacery. Kiedy tylko mam trochę więcej czasu lubię wsiąść w samochód i pojechać w nieznane. Dzięki temu znalazłem wiele miejsc położonych stosunkowo blisko Warszawy, gdzie można miło spędzić czas, zrelaksować się i pozwiedzać';
+	'W wolnych chwilach, pomiędzy pracą a nauką tworzenia stron internetowych, wsiadam w samochód i ruszam w nieznane. Kiedy zorientowałem się, że nie muszę pokonywać setek kilometrów, żeby zobaczyć i zwiedzić ciekawe miejsca, zacząłem dowiadywać się coraz więcej o lokalnych atrakcjcach turystycznych. Byłem zaskoczony jak wiele do zaoferowania ma mazowsze. Niniejszy blog jest zapisem wrażeń z części moich małych wypraw, zawiera również skromną dokumentację fotograficzną. Blog jest jednocześnie projektem do portfolio, wykonanym w ramach nauki web developmentu - strona została w całości zaprojektowana i stworzona przeze mnie. Zapraszam do lektury.';
 const ABOUT_MAIL_TITLE = 'Zapraszam do kontaktu:';
 const ABOUT_MAIL = 'grzegorz.wirtek@wp.pl';
 const ABOUT_NAVIGATE_BUTTON_TEXT = 'Przejdź do bloga';

@@ -5,7 +5,8 @@ import { GET_ARTICLES, ADD_COMMENT } from '../constans/actionTypes';
 export const getArticles = () => async (dispatch) => {
 	try {
 		const { data } = await api.getArticlesByAxios();
-		dispatch({ type: GET_ARTICLES, payload: data });
+		const dataReverse = data.reverse();
+		dispatch({ type: GET_ARTICLES, payload: dataReverse });
 	} catch (error) {
 		console.log('Get articles error: ', error);
 	}

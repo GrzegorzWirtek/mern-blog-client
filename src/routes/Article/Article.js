@@ -18,11 +18,11 @@ const Article = () => {
 					<picture>
 						<source
 							media='(min-width:400px)'
-							srcSet={`../images/${imgNames[index + 1].imgName}.png`}
+							srcSet={`images/${imgNames[index + 1].imgName}.png`}
 						/>
 						<img
 							className='article__img'
-							src={`../images/${imgNames[index + 1].imgName}-min.png`}
+							src={`images/${imgNames[index + 1].imgName}-min.png`}
 							alt={imgNames[index + 1].imgDescription}
 						/>
 					</picture>
@@ -33,10 +33,16 @@ const Article = () => {
 				</div>
 			);
 		}
+
 		const p = part.replace(/\\n/g, '\n');
 		return (
 			<div key={index}>
-				<p className='article__text'>{p}</p>
+				<p
+					className={
+						index < text.length - 1 ? 'article__text' : 'article__sources'
+					}>
+					{p}
+				</p>
 				{photo}
 			</div>
 		);
@@ -44,15 +50,15 @@ const Article = () => {
 
 	return (
 		<div className='article'>
-			<div className='article__img-wrapper'>
+			<div className='article__img-main-wrapper'>
 				<picture>
 					<source
 						media='(min-width:400px)'
-						srcSet={`../images/${imgNames[0].imgName}.png`}
+						srcSet={`images/${imgNames[0].imgName}.png`}
 					/>
 					<img
 						className='article__img'
-						src={`../images/${imgNames[0].imgName}-min.png`}
+						src={`images/${imgNames[0].imgName}-min.png`}
 						alt=''
 					/>
 				</picture>

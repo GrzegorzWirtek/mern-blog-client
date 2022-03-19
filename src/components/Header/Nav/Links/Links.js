@@ -7,10 +7,14 @@ const Links = () => {
 	const state = useSelector((state) => state.navigationReducer);
 	const line = state.isDesktop && <span className='nav__line'></span>;
 
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
+
 	return (
-		<ul className='nav'>
+		<ul className='nav' onClick={scrollToTop}>
 			<li className='nav__li'>
-				<Link className='nav__link' to='/'>
+				<Link className='nav__link tak' to='/'>
 					HOME
 					{line}
 				</Link>

@@ -9,22 +9,22 @@
 }
 
 .home__title {
-  font-size: 3.4rem;
-  font-weight: 600;
   font-family: 'Noto Serif Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .home__decription {
-  font-size: 1.9rem;
-  font-weight: 300;
   font-family: 'Catamaran', sans-serif;
+  font-size: 1.9rem;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .recent {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .recent__title {
@@ -32,7 +32,7 @@
   margin: 0 auto;
   font-family: 'Noto Serif Display', serif;
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-top: 20px;
   text-align: center;
   border-top: 1px solid #727272;
@@ -65,7 +65,7 @@
 
 @media (min-width:800px) {
   .home {
-    margin-top: 20px;
+    margin-top: 80px;
     padding: 0;
   }
 

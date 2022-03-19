@@ -3,7 +3,6 @@ import './ArticleMin.css';
 
 const ArticleMin = ({ data }) => {
 	const navigate = useNavigate();
-	// const { _id, imgName, date, title } = data;
 	const { _id, imgNames, date, title } = data;
 
 	const scrollToTop = () => {

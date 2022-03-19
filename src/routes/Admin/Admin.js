@@ -135,7 +135,7 @@ const Admin = () => {
 	};
 
 	const imgNames = imgs.map((name) => (
-		<img src={`/images/${name}.png`} alt='' className='article__img' />
+		<img src={`images/${name}.png`} alt='' className='article__img' />
 	));
 
 	const content = texts.map((text, index) => {
@@ -146,7 +146,7 @@ const Admin = () => {
 				<p className='article__text '>{p}</p>
 				<div className='article__img-wrapper'>
 					<img
-						src={`/images/${imgs[index + 1]}.png`}
+						src={`images/${imgs[index + 1]}.png`}
 						alt=''
 						className='article__img'
 					/>
