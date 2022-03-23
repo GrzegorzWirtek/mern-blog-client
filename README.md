@@ -12,7 +12,8 @@ I made the project as part of the MERN application development exercise. I'm usi
 
 Project is created with:
 
-- **React.js** version 17.0.2
+- **CSS**
+- **react.js** version 17.0.2
 - **react-dom** version 17.0.2
 - **redux** version 4.1.2
 - **react-redux** version 7.2.6
@@ -28,7 +29,7 @@ Page is deployed to gh-pages: **[Blog](https://grzegorzwirtek.github.io/mern-blo
 The project can be also run locally using npm (localhost:3000):
 
 ```
-$ cd ../nazwa-projektu
+$ cd ../project-name
 $ npm install
 $ npm run start
 ```
