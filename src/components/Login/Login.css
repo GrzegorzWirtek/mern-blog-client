@@ -1,0 +1,46 @@
+.login {
+  min-height: 65vh;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__input {
+  height: 36px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0 5px;
+  border: 1px solid #919191;
+  outline: none;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2rem;
+}
+
+button.login__button {
+  height: 38px;
+  line-height: 1;
+}
+
+.login__warning {
+  flex-basis: 100%;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2rem;
+  color: red;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+@media (min-width: 800px) {
+  .login {
+    margin-top: 0px;
+  }
+}

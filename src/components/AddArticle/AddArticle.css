@@ -1,0 +1,132 @@
+.add-article__wrapper {
+  min-height: 60vh;
+}
+
+.add-article__title {
+  padding: 40px 0 20px 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  border-bottom: 1px solid #727272;
+}
+
+.preview {
+  min-height: 20vh;
+}
+
+.preview__title {
+  margin: 50px auto 20px auto;
+  padding: 10px 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  border-bottom: 1px solid #727272;
+}
+
+
+.add-article__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+  padding: 40px 0;
+}
+
+.add-article__input {
+  flex-basis: 60%;
+  padding: 3px 5px;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  resize: none;
+  outline: none;
+  border: 1px solid #727272;
+  flex-grow: 1;
+}
+
+.add-article__choose {
+  flex-basis: 100%;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+button.add-article__button {
+  min-width: 243px;
+  width: 100%;
+  background-color: rgb(145, 145, 145);
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+button.add-article__button--cancel {
+  background-color: #32591A;
+  margin: 10px 10px;
+  width: 100%;
+}
+
+button.add-article__button--cancel:hover {
+  background-color: #4e882a;
+}
+
+button.add-article__button--submit {
+  margin: 10px 10px;
+  width: 100%;
+}
+
+.add-article__submit-section {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.preview__map {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+
+@media (min-width: 800px) {
+  .add-article__form {
+    margin: 0 15px 20px 15px;
+  }
+
+  .add-article__title {
+    padding: 20px 15px 40px 15px;
+    margin: 0 15px;
+    font-size: 3rem;
+  }
+
+  .preview__title {
+    margin: 50px 15px 20px 15px;
+    font-size: 3rem;
+  }
+
+  button.add-article__button {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 243px;
+  }
+
+  button.add-article__button--cancel {
+    background-color: #32591A;
+    margin: 20px 10px;
+    width: 243px;
+  }
+
+  button.add-article__button--submit {
+    margin: 20px 10px;
+    width: 243px;
+  }
+
+  .preview__map {
+    margin: 0 15px;
+  }
+}

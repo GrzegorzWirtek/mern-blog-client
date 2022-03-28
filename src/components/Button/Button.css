@@ -16,6 +16,6 @@
 @media (min-width:800px) {
   .button {
     cursor: pointer;
-    transition: 0.2s;
+    transition: background-color 0.2s;
   }
 }

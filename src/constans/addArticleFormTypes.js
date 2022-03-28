@@ -1,0 +1,10 @@
+export const ADD_MAIN_IMG = 'Zdjęcie główne (nazwa bez rozszerzenia)';
+export const ADD_TITLE = 'Tytuł';
+export const CHOOSE = 'Co chcesz teraz zrobić?';
+export const ADD_IMG = 'Zdjęcie (nazwa bez rozszerzenia';
+export const ADD_IMG_DESCRIPTION = 'Opis zdjęcia';
+export const ADD_PARAGRAPH = 'Tekst';
+export const ADD_SOURCES = 'Źródła';
+export const ADD_MAP_DESCRIPTION = 'Opis dojazdu';
+export const ADD_MAP_SRC = 'Src mapy Google';
+export const SUBMIT = 'Zatwierdź';

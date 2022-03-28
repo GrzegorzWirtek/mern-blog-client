@@ -3,6 +3,7 @@ import {
 	TOGGLE_IS_DEKSTOP,
 	SET_FOUND_ARTICLES,
 	TOGGLE_COMMENTS_FORM,
+	SET_IS_LOGGED_IN,
 } from '../constans/actionTypes';
 
 const initialNavigationState = {
@@ -10,6 +11,9 @@ const initialNavigationState = {
 	isDesktop: true,
 	foundArticles: [],
 	isCommentsFormVisible: false,
+	isLoggedIn: false,
+	isBlocked: false,
+	attempts: 3,
 };
 
 const navigationReducer = (state = initialNavigationState, action) => {
@@ -22,6 +26,13 @@ const navigationReducer = (state = initialNavigationState, action) => {
 			return { ...state, foundArticles: action.payload };
 		case TOGGLE_COMMENTS_FORM:
 			return { ...state, isCommentsFormVisible: !state.isCommentsFormVisible };
+		case SET_IS_LOGGED_IN:
+			return {
+				...state,
+				isLoggedIn: action.payload.login,
+				isBlocked: action.payload.blocked,
+				attempts: action.payload.attempts,
+			};
 		default:
 			return state;
 	}
