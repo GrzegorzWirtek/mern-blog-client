@@ -1,4 +1,4 @@
-import Button from '../../Button/Button';
+import Button from '../../../components/Button/Button';
 
 const AddArticleInput = ({ type, action, change, value, buttonClick }) => {
 	const inputElement =
@@ -14,7 +14,7 @@ const AddArticleInput = ({ type, action, change, value, buttonClick }) => {
 			<textarea
 				rows='10'
 				wrap='hard'
-				className='add-article__input'
+				className='add-article__textarea'
 				type='text'
 				placeholder={action}
 				onChange={change}

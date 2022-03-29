@@ -8,8 +8,7 @@ import { checkLogin } from '../../actions/login';
 const Login = () => {
 	const dispatch = useDispatch();
 	const state = useSelector((state) => state.navigationReducer);
-	const { isLoggedIn, isBlocked, attempts } = state;
-	console.log('login', isLoggedIn, 'blocked', isBlocked, attempts);
+	const { isBlocked, attempts } = state;
 
 	const [login, setLogin] = useState('');
 	const [password, setPassword] = useState('');
@@ -33,6 +32,7 @@ const Login = () => {
 	return (
 		<section className='login'>
 			<form className='login__form' onSubmit={handleSubmit}>
+				<p className='login__title'>Logowanie</p>
 				{warning}
 				<input
 					type='text'

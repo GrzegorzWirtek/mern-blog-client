@@ -4,6 +4,7 @@ import {
 	SET_FOUND_ARTICLES,
 	TOGGLE_COMMENTS_FORM,
 	SET_IS_LOGGED_IN,
+	LOGOUT,
 } from '../constans/actionTypes';
 
 const initialNavigationState = {
@@ -32,6 +33,11 @@ const navigationReducer = (state = initialNavigationState, action) => {
 				isLoggedIn: action.payload.login,
 				isBlocked: action.payload.blocked,
 				attempts: action.payload.attempts,
+			};
+		case LOGOUT:
+			return {
+				...state,
+				isLoggedIn: false,
 			};
 		default:
 			return state;

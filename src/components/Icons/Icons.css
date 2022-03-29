@@ -31,12 +31,18 @@
 
   .nav__icon {
     height: 20px;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 10px;
     cursor: pointer;
     filter: invert(44%) sepia(0%) saturate(2905%) hue-rotate(43deg) brightness(103%) contrast(82%);
   }
 
   .icon:hover {
     filter: invert(0%) sepia(2%) saturate(7429%) hue-rotate(125deg) brightness(102%) contrast(95%);
+  }
+}
+
+@media (min-width: 900px) {
+  .nav__icon {
+    margin: 0 0 0 15px;
   }
 }

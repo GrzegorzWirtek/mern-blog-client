@@ -1,4 +1,4 @@
-import Button from '../../Button/Button';
+import Button from '../../../components/Button/Button';
 
 const AddArticleChoose = ({ clicks, texts, classes }) => {
 	return (

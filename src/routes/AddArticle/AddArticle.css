@@ -5,7 +5,7 @@
 .add-article__title {
   padding: 40px 0 20px 0;
   font-family: 'Catamaran', sans-serif;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1;
   text-align: center;
@@ -41,6 +41,19 @@
   padding: 3px 5px;
   font-family: 'Catamaran', sans-serif;
   line-height: 1.4;
+  height: 46px;
+  font-size: 1.8rem;
+  resize: none;
+  outline: none;
+  border: 1px solid #727272;
+  flex-grow: 1;
+}
+
+.add-article__textarea {
+  flex-basis: 60%;
+  padding: 3px 5px;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.4;
   font-size: 1.8rem;
   resize: none;
   outline: none;
@@ -64,12 +77,14 @@ button.add-article__button {
   background-color: rgb(145, 145, 145);
   margin-top: 15px;
   align-self: flex-start;
+  height: 48px;
 }
 
 button.add-article__button--cancel {
   background-color: #32591A;
   margin: 10px 10px;
   width: 100%;
+  height: 48px;
 }
 
 button.add-article__button--cancel:hover {
@@ -79,6 +94,7 @@ button.add-article__button--cancel:hover {
 button.add-article__button--submit {
   margin: 10px 10px;
   width: 100%;
+  height: 48px;
 }
 
 .add-article__submit-section {
@@ -109,21 +125,28 @@ button.add-article__button--submit {
     font-size: 3rem;
   }
 
+  .add-article__input {
+    height: 40px;
+  }
+
   button.add-article__button {
     margin-top: 0px;
     margin-left: 10px;
     width: 243px;
+    height: 41px;
   }
 
   button.add-article__button--cancel {
     background-color: #32591A;
     margin: 20px 10px;
     width: 243px;
+    height: 41px;
   }
 
   button.add-article__button--submit {
     margin: 20px 10px;
     width: 243px;
+    height: 41px;
   }
 
   .preview__map {

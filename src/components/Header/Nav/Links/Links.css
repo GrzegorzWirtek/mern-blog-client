@@ -19,6 +19,11 @@
   letter-spacing: 1px;
 }
 
+.nav__link.nav__logout {
+  color: red;
+  cursor: pointer;
+}
+
 @media (min-width: 800px) {
   .nav {
     flex-direction: row;
@@ -26,7 +31,7 @@
   }
 
   .nav__li {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 15px;
   }
 
   .nav__link {
@@ -51,5 +56,11 @@
 
   .nav__link:hover {
     color: black;
+  }
+}
+
+@media (min-width: 900px) {
+  .nav__li {
+    margin: 0 0 0 25px;
   }
 }

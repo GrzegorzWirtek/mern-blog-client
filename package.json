@@ -1,5 +1,5 @@
 {
-  "homepage": "https://grzegorzwirtek.github.io/mern-blog-client/",
+  "homepage": "http://localhost:3000/",
   "name": "client",
   "version": "0.1.0",
   "private": true,

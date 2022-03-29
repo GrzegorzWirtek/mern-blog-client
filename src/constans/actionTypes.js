@@ -8,3 +8,4 @@ export const TOGGLE_COMMENTS_FORM = 'TOGGLE_COMMENTS_FORM';
 export const ADD_COMMENT = 'ADD_COMMENT';
 
 export const SET_IS_LOGGED_IN = 'SET_IS_LOGGED_IN';
+export const LOGOUT = 'LOGOUT';
