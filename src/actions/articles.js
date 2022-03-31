@@ -1,6 +1,11 @@
 import * as api from '../api';
 
-import { GET_ARTICLES, ADD_COMMENT } from '../constans/actionTypes';
+import {
+	GET_ARTICLES,
+	ADD_COMMENT,
+	ADD_ARTICLE,
+	DELETE_ARTICLE,
+} from '../constans/actionTypes';
 
 export const getArticles = () => async (dispatch) => {
 	try {
@@ -24,7 +29,18 @@ export const addComment = (newComment) => async (dispatch) => {
 export const addArticle = (newArticle) => async (dispatch) => {
 	try {
 		const { data } = await api.addArticleByAxios(newArticle);
-		dispatch({ type: 'ADD_ARTICLE', payload: data });
+		const dataReverse = data.reverse();
+		dispatch({ type: ADD_ARTICLE, payload: dataReverse });
+	} catch (error) {
+		console.log('Add article error: ', error);
+	}
+};
+
+export const deleteArticle = (_id) => async (dispatch) => {
+	try {
+		const { data } = await api.deleteArticleByAxios({ _id });
+		const dataReverse = data.reverse();
+		dispatch({ type: DELETE_ARTICLE, payload: dataReverse });
 	} catch (error) {
 		console.log('Add article error: ', error);
 	}

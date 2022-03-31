@@ -1,10 +1,17 @@
-import { GET_ARTICLES, ADD_COMMENT } from '../constans/actionTypes';
+import {
+	GET_ARTICLES,
+	ADD_COMMENT,
+	ADD_ARTICLE,
+	DELETE_ARTICLE,
+} from '../constans/actionTypes';
 
 const articlesReducer = (articles = [], action) => {
 	switch (action.type) {
 		case GET_ARTICLES:
 			return action.payload;
-		case 'ADD_ARTICLE':
+		case ADD_ARTICLE:
+			return action.payload;
+		case DELETE_ARTICLE:
 			return action.payload;
 		case ADD_COMMENT:
 			return articles.filter((article) => {

@@ -1,0 +1,55 @@
+.delete-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.857);
+}
+
+.delete-popup__wrapper {
+  position: fixed;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  border: 1px solid #727272;
+  background-color: white;
+}
+
+.delete-popup__header {
+  flex-basis: 100%;
+  margin-bottom: 30px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.delete-popup__title {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #727272;
+}
+
+.delete-popup__button {
+  width: 200px;
+  margin: 10px;
+}
+
+.delete-popup__button--delete {
+  background-color: #32591A;
+}
+
+.delete-popup__button--delete:hover {
+  background-color: #4e882a;
+}

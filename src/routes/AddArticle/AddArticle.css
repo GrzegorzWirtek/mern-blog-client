@@ -3,13 +3,12 @@
 }
 
 .add-article__title {
-  padding: 40px 0 20px 0;
+  padding: 60px 0 0 0;
   font-family: 'Catamaran', sans-serif;
   font-size: 3rem;
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  border-bottom: 1px solid #727272;
 }
 
 .preview {
@@ -27,13 +26,12 @@
   border-bottom: 1px solid #727272;
 }
 
-
 .add-article__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px auto 20px auto;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .add-article__input {
@@ -111,11 +109,10 @@ button.add-article__button--submit {
 
 @media (min-width: 800px) {
   .add-article__form {
-    margin: 0 15px 20px 15px;
+    margin: 20px 15px 20px 15px;
   }
 
   .add-article__title {
-    padding: 20px 15px 40px 15px;
     margin: 0 15px;
     font-size: 3rem;
   }

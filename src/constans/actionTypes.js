@@ -7,5 +7,8 @@ export const TOGGLE_COMMENTS_FORM = 'TOGGLE_COMMENTS_FORM';
 
 export const ADD_COMMENT = 'ADD_COMMENT';
 
+export const ADD_ARTICLE = 'ADD_ARTICLE';
+export const DELETE_ARTICLE = 'DELETE_ARTICLE';
+
 export const SET_IS_LOGGED_IN = 'SET_IS_LOGGED_IN';
 export const LOGOUT = 'LOGOUT';
