@@ -2,12 +2,13 @@ import { useSelector } from 'react-redux';
 import './Article.css';
 import Comments from '../../components/Comments/Comments';
 
+import { useParams } from 'react-router-dom';
+
 const Article = () => {
-	const url = window.location.href;
-	const currentId = url.slice(-24);
+	const { id } = useParams();
 
 	const articles = useSelector((state) => state.articlesReducer);
-	const article = articles.filter((article) => article._id === currentId)[0];
+	const article = articles.filter((article) => article._id === id)[0];
 	const { imgNames, date, title, text, comments, googleMaps } = article;
 
 	const content = text.map((part, index) => {
@@ -74,7 +75,7 @@ const Article = () => {
 					loading='lazy'></iframe>
 				<p className='article__map-description'>{googleMaps.description}</p>
 			</section>
-			<Comments id={currentId} comments={comments} />
+			<Comments id={id} comments={comments} />
 		</div>
 	);
 };

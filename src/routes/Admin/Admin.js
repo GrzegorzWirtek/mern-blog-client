@@ -18,7 +18,7 @@ const Admin = () => {
 		<section className='admin'>
 			<div className='admin__wrapper'>
 				<p className='admin__title'>
-					Zalogowano jako <span className='admin__span'>Baskerville</span>
+					Zalogowano jako <span className='admin__span'>{isLoggedIn}</span>
 				</p>
 				<Button
 					text='Utwórz artykuł'

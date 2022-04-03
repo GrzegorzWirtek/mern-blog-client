@@ -28,7 +28,7 @@ const Icons = ({ iconsSubClass, iconSubClass }) => {
 			</a>
 
 			<a
-				href='https://github.com/GrzegorzWirtek'
+				href='https://github.com/GrzegorzWirtek?tab=repositories'
 				target='_blank'
 				rel='noreferrer noopener'>
 				<img
